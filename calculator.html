@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/dry.underscore.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/glyphicons.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+
+    <body class="clearfix">
+        <div class="container clearfix">
+            <div class="checklist clearfix">
+                <div class="header">
+                    <div class="title">Belt Length Calculator</div>
+                    <div class="instructions"><span>Input how long you think the belt should be without any length adjustment. <br/> If you have a 32" inch waist and you want a 36" belt, put in 36". <br/>Also input the material thickness in decimal. 1/4" leather? Put in 0.25. <br/> The units are in inches.</span></div>
+                </div>
+
+                <div class="questions">
+                    <div class="question">
+                        <div class="text">Desired length:</div>
+                        <input autofocus="autofocus" class="length" type="number" value="36"/> <div class="unit">inches</div>
+                    </div>
+                    <div class="question">
+                        <div class="text">Material thickness:</div>
+                        <input class="thickness" type="number" value="0.25" /><div class="unit">inches</div> 
+                    </div>
+                </div>
+                <button class="calculate">Calculate</button>
+            </div>
+
+
+
+            <div class="results clearfix hide">
+                <div class="header hide">
+                    <div class="title">Results</div>
+                    <!-- <div class="score">Score: <span class="value"></span></div>   -->
+                    <!-- <div class="result">Result: <span class="value"></span></div> -->
+                </div>
+                <div class="content">
+                    <div class="wrapper clearfix">
+                        <div class="sentence"><span class="value">You should cut a strap <span class="result"></span> inches long.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
